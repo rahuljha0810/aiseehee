@@ -1,0 +1,15 @@
+t=int(input())
+ans=[]
+for i in range(t):
+    a=int(input())
+    doll=[]
+    for _ in range(a):
+        x=int(input())
+        doll.append(x)
+    for i in doll :
+        c=doll.count(i)
+        if c%2!=0:
+            ans.append(i)
+for i in range(len(ans)):
+    print(ans[i])
+    
